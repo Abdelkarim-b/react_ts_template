@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Person } from './Person';
+import { Person, enumCountry } from './Person';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
           age={28}
           isMarried={false}
           friends={["mohamed", "billel"]}
+          country= {enumCountry.alg}
        />
     </div>
   );

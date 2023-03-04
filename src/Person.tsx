@@ -3,7 +3,14 @@ interface propsPerson{
     email: string,
     age: number,
     isMarried: boolean,
-    friends: string[]
+    friends: string[],
+    country: enumCountry
+}
+
+export enum enumCountry{
+    alg = "Algeria",
+    can = "Canada",
+    brz = "Brazil"
 }
 
 export const Person = (props: propsPerson) =>{
@@ -16,6 +23,7 @@ export const Person = (props: propsPerson) =>{
             {props.friends.map((friend: string)=>
                 <h1>{friend}</h1>
             )}
+            <h1>Country : {props.country}</h1>
         </div>
     )
 }
